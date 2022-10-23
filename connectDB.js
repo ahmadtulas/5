@@ -13,11 +13,6 @@ const connect = async() => {
     return sequelize.authenticate();
 }
 
-module.exports = {
-    connect,
-    sequelize
-}
-
 // sequelize
 // .authenticate()
 // .then(()=>{
@@ -26,5 +21,12 @@ module.exports = {
 // .catch((error)=>{
 //     console.log("Unable to connect with DB:",error);
 // });
+
+module.exports = {
+    connect,
+    sequelize
+}
+
+
 
 
